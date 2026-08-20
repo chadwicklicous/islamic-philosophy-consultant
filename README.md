@@ -1,21 +1,23 @@
 # Islamic Philosophy Consultant
 
 A citation-grounded consultant for the **Islamic philosophers (falāsifa)** — al-Kindi,
-al-Farabi, Avicenna (Ibn Sina), al-Ghazali, and Averroes (Ibn Rushd) — answering
-**from the original Arabic** with exact citations (thinker + work + section), not from
-a translation or a model's recollection.
+al-Farabi, Avicenna (Ibn Sina), al-Ghazali, Averroes (Ibn Rushd), and Ibn Arabi —
+answering **from the original Arabic** (and, for Ibn Arabi, from a clearly-labeled
+English translation) with exact citations (thinker + work + section), not from a
+translation or a model's recollection.
 
 ## What it does
 
-1. Downloads the clean Arabic texts of the five falāsifa from ar.wikisource:
+1. Downloads the clean Arabic texts of the falāsifa from ar.wikisource:
    - **al-Kindi** — 7 philosophical epistles (On First Philosophy, De Intellectu, On the Soul, etc.)
    - **al-Farabi** — the Dieterici collection (Al-Jam', Fusus al-Hikam, 'Uyun al-Masa'il, Ma'ani al-'Aql, etc.)
    - **Avicenna (Ibn Sina)** — *al-Najat* (The Deliverance): logic, physics, metaphysics
    - **al-Ghazali** — *al-Munqidh min al-Dalal*, *al-Iqtisad fi al-I'tiqad*
    - **Averroes (Ibn Rushd)** — *Fasl al-Maqal*, *Bidayat al-Mujtahid* (17 books)
-2. Extracts 1,223 citation-tagged segments, each `CITATION\tTEXT`.
+   - **Ibn Arabi** — *Tarjuman al-Ashwaq* (Nicholson's English translation)
+2. Extracts 1,308 citation-tagged segments, each `CITATION\tTEXT`.
 3. Builds a ChromaDB vector index (bge-m3, 1024-dim, multilingual) for semantic search.
-4. Answers questions by retrieving the relevant Arabic passages with exact citations.
+4. Answers questions by retrieving the relevant passages with exact citations.
 
 ## Two ways to use it
 
@@ -80,14 +82,17 @@ python ip_index.py --query "the Necessary Being and proof of God" --k 5
 | **Avicenna (Ibn Sina)** | *al-Najat* (logic, physics, metaphysics) | 264 |
 | **al-Ghazali** | *al-Munqidh*, *al-Iqtisad* | 120 |
 | **Averroes (Ibn Rushd)** | *Fasl al-Maqal*, *Bidayat al-Mujtahid* (17 books) | 715 |
+| **Ibn Arabi** | *Tarjuman al-Ashwaq* (tr. Nicholson) — **English translation** | 85 |
 
 ### Not yet included (deferred)
 
-The **Illuminationist / later thinkers** — Suhrawardi, Ibn Arabi, Mulla Sadra — are
-**not** in the corpus because no clean, machine-readable Arabic text is freely available
-(only imperfect OCR of scans or paid editions). They are flagged so the consultant is
-honest about coverage rather than silently omitting them. If clean editions are sourced,
-they can be added following the same pattern.
+The **Illuminationist / later thinkers** — Suhrawardi and Mulla Sadra — are
+**not** in the corpus because no clean, machine-readable text (Arabic or English)
+is freely available (only imperfect OCR of scans or paid editions). Ibn Arabi is
+partially covered via the English *Tarjuman al-Ashwaq*; his major works (*Futuhat
+al-Makkiyya*, *Fusus al-Hikam*) remain out pending clean editions. These gaps are
+flagged so the consultant is honest about coverage rather than silently omitting
+them. If clean editions are sourced, they can be added following the same pattern.
 
 ## Citation format
 

@@ -14,7 +14,8 @@ metadata:
 # Islamic Philosophy Consultant
 
 Answer questions about the **Islamic philosophers (falāsifa)** — al-Kindi, al-Farabi,
-Avicenna (Ibn Sina), al-Ghazali, and Averroes (Ibn Rushd) — **from the original Arabic**,
+Avicenna (Ibn Sina), al-Ghazali, Averroes (Ibn Rushd), and Ibn Arabi — **from the
+original Arabic** (and, for Ibn Arabi, from a clearly-labeled English translation),
 with exact citations (thinker + work + section), not from a translation or the model's
 recollection.
 
@@ -31,7 +32,7 @@ recollection.
 - **Vector index:** `C:\Users\philo\islamic-philosophy-consultant\scripts\chroma\` — ChromaDB collection `islamic_philosophy_corpus`, bge-m3 (1024-dim, multilingual)
 - **Raw sources:** `scripts/raw/` — the clean Arabic texts fetched from ar.wikisource
 
-The corpus covers five thinkers (all in the original Arabic):
+The corpus covers six thinkers:
 
 | Thinker | Works | Segments |
 |---------|-------|----------|
@@ -40,17 +41,25 @@ The corpus covers five thinkers (all in the original Arabic):
 | **Avicenna (Ibn Sina)** | *al-Najat* (The Deliverance) — logic, physics, metaphysics | 264 |
 | **al-Ghazali** | *al-Munqidh min al-Dalal*, *al-Iqtisad fi al-I'tiqad* | 120 |
 | **Averroes (Ibn Rushd)** | *Fasl al-Maqal*, *Bidayat al-Mujtahid* (17 books) | 715 |
+| **Ibn Arabi** | *Tarjuman al-Ashwaq* (tr. Nicholson) — **English translation** | 85 |
 
 Each entry carries the thinker + work in its citation, e.g.
 `al-Kindi | في الفلسفة الأولى | فصل في ...` or `Averroes | بداية المجتهد - كتاب الطهارة`.
 
+**Note on Ibn Arabi:** the *Tarjuman al-Ashwaq* is included as Nicholson's **English
+translation** (the Arabic original is not freely available as clean text). It is
+clearly labeled as a translation in every citation (`tr. Nicholson`), so answers
+from it are quoted in English, not Arabic.
+
 ### Not yet included (deferred)
 
-The **Illuminationist / later thinkers** — Suhrawardi, Ibn Arabi, Mulla Sadra — are
-**not** in the corpus because no clean, machine-readable Arabic text is freely
-available (only imperfect OCR of scans or paid editions). They are flagged here so
-the consultant is honest about coverage rather than silently omitting them. If clean
-editions are sourced, they can be added following the same pattern.
+The **Illuminationist / later thinkers** — Suhrawardi and Mulla Sadra — are
+**not** in the corpus because no clean, machine-readable text (Arabic or English)
+is freely available (only imperfect OCR of scans or paid editions). Ibn Arabi is
+partially covered via the English *Tarjuman al-Ashwaq*; his major works (*Futuhat
+al-Makkiyya*, *Fusus al-Hikam*) remain out pending clean editions. These gaps are
+flagged so the consultant is honest about coverage rather than silently omitting
+them. If clean editions are sourced, they can be added following the same pattern.
 
 ## Query Workflow
 
