@@ -165,16 +165,6 @@ python ip_index.py --query "the Necessary Being and proof of God" --k 5
 
 ---
 
-## Research note
-
-- **The Active Intellect and the Soul** (`docs/`) — a two-chapter comparative essay on
-  the metaphysics of the soul and the active intellect in the Islamic philosophers vs.
-  St. Thomas Aquinas, grounded in the corpus (Avicenna's *al-Najat*, al-Farabi's
-  *Ma'ani al-'Aql*, al-Kindi's *On First Philosophy*, and the *Summa Theologiae* /
-  *Contra Gentiles*).
-
----
-
 ## License
 
 MIT. The Arabic texts are from ar.wikisource (public/open); the English translation of
