@@ -104,6 +104,13 @@ them. If clean editions are sourced, they can be added following the same patter
 | `al-Ghazali \| المنقذ من الضلال` | al-Ghazali, The Deliverance from Error |
 | `Averroes \| فصل المقال` | Averroes, The Decisive Treatise |
 
+## Research note
+
+- **The Active Intellect and the Soul** (`docs/`) — a two-chapter comparative essay on the
+  metaphysics of the soul and the active intellect in the Islamic philosophers vs. St. Thomas
+  Aquinas, grounded in the corpus (Avicenna's *al-Najat*, al-Farabi's *Ma'ani al-'Aql*,
+  al-Kindi's *On First Philosophy*, and the *Summa Theologiae* / *Contra Gentiles*).
+
 ## License
 
 MIT. The Arabic texts are from ar.wikisource (public/open); this repository does not
