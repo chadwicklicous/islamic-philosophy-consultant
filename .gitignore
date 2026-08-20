@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.pyc
+
+# Corpora are built on demand by the scripts; never commit the large data.
+scripts/raw/
+scripts/text/
+scripts/chroma/
+
+.env
